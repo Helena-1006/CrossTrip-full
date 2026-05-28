@@ -1,0 +1,434 @@
+[
+  {
+    "number": 0,
+    "state": "TrialState.COMPLETE",
+    "value": 1.7517,
+    "params": {
+      "soft_constraint_scale": 0.025385120286725255,
+      "lr": 0.0004439389550704353,
+      "lambda_pair": 0.18959369053293612,
+      "pair_max_future": 4,
+      "lambda_transition": 0.17979293680874248,
+      "transition_logit_scale": 0.15899095341309433,
+      "beam_size": 3,
+      "beam_len_penalty": 0.31775915415238765,
+      "combo_beta": 3.692245701003141,
+      "dropout": 0.125717100341323,
+      "temperature": 0.10996504616739343,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 2,
+      "best_val_item": {
+        "epoch": 2,
+        "f1": 0.0154,
+        "pairs_f1": 0.0003,
+        "full_f1": 0.5989,
+        "full_pairs_f1": 0.2882
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Yelp --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Yelp/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name yelp_both_pipeline_v1_tune_trial_000 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 0 --f1_floor_margin 0.002 --early_stop_metric full_combo --enable_pairwise_loss 1 --lr 0.0004439389550704353 --lambda_pair 0.18959369053293612 --pair_max_future 4 --lambda_transition 0.17979293680874248 --transition_logit_scale 0.15899095341309433 --beam_size 3 --beam_len_penalty 0.31775915415238765 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 3.692245701003141 --dropout 0.125717100341323 --temperature 0.10996504616739343 --seq_num_layers 2 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.025385120286725255 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs/04-16-14:53 yelp_both_pipeline_v1_tune_trial_000(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_both_pipeline_v1_tune_trial_000",
+      "trial_name": "yelp_both_pipeline_v1_tune_trial_000"
+    }
+  },
+  {
+    "number": 1,
+    "state": "TrialState.COMPLETE",
+    "value": 1.7525,
+    "params": {
+      "soft_constraint_scale": 0.05357176052919649,
+      "lr": 0.00034293009672442494,
+      "lambda_pair": 0.06976525181581228,
+      "pair_max_future": 4,
+      "lambda_transition": 0.1361077594432698,
+      "transition_logit_scale": 0.28260403862466427,
+      "beam_size": 3,
+      "beam_len_penalty": 0.43107881956259375,
+      "combo_beta": 3.145478039085165,
+      "dropout": 0.14054109801804376,
+      "temperature": 0.11869162524185016,
+      "seq_num_layers": 3,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 16
+    },
+    "user_attrs": {
+      "best_val_epoch": 6,
+      "best_val_item": {
+        "epoch": 6,
+        "f1": 0.021,
+        "pairs_f1": 0.001,
+        "full_f1": 0.6021,
+        "full_pairs_f1": 0.2876
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Yelp --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Yelp/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name yelp_both_pipeline_v1_tune_trial_001 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 0 --f1_floor_margin 0.002 --early_stop_metric full_combo --enable_pairwise_loss 1 --lr 0.00034293009672442494 --lambda_pair 0.06976525181581228 --pair_max_future 4 --lambda_transition 0.1361077594432698 --transition_logit_scale 0.28260403862466427 --beam_size 3 --beam_len_penalty 0.43107881956259375 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 3.145478039085165 --dropout 0.14054109801804376 --temperature 0.11869162524185016 --seq_num_layers 3 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.05357176052919649 --soft_constraint_dist_emb_dim 16 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs/04-16-15:02 yelp_both_pipeline_v1_tune_trial_001(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_both_pipeline_v1_tune_trial_001",
+      "trial_name": "yelp_both_pipeline_v1_tune_trial_001"
+    }
+  },
+  {
+    "number": 2,
+    "state": "TrialState.COMPLETE",
+    "value": 1.7532,
+    "params": {
+      "soft_constraint_scale": 0.07498466069744883,
+      "lr": 0.0004562487002247504,
+      "lambda_pair": 0.049009977603333685,
+      "pair_max_future": 6,
+      "lambda_transition": 0.1374167334183384,
+      "transition_logit_scale": 0.2222178005094156,
+      "beam_size": 3,
+      "beam_len_penalty": 0.44349753088705746,
+      "combo_beta": 2.0984134923431585,
+      "dropout": 0.13030822625040137,
+      "temperature": 0.06413239744570416,
+      "seq_num_layers": 3,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 4,
+      "best_val_item": {
+        "epoch": 4,
+        "f1": 0.0188,
+        "pairs_f1": 0.0006,
+        "full_f1": 0.6008,
+        "full_pairs_f1": 0.2881
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Yelp --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Yelp/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name yelp_both_pipeline_v1_tune_trial_002 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 0 --f1_floor_margin 0.002 --early_stop_metric full_combo --enable_pairwise_loss 1 --lr 0.0004562487002247504 --lambda_pair 0.049009977603333685 --pair_max_future 6 --lambda_transition 0.1374167334183384 --transition_logit_scale 0.2222178005094156 --beam_size 3 --beam_len_penalty 0.44349753088705746 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 2.0984134923431585 --dropout 0.13030822625040137 --temperature 0.06413239744570416 --seq_num_layers 3 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.07498466069744883 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs/04-16-15:15 yelp_both_pipeline_v1_tune_trial_002(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_both_pipeline_v1_tune_trial_002",
+      "trial_name": "yelp_both_pipeline_v1_tune_trial_002"
+    }
+  },
+  {
+    "number": 3,
+    "state": "TrialState.COMPLETE",
+    "value": 1.751,
+    "params": {
+      "soft_constraint_scale": 0.07419834056626978,
+      "lr": 0.0004994637681572835,
+      "lambda_pair": 0.17317775748211237,
+      "pair_max_future": 4,
+      "lambda_transition": 0.13760133870709546,
+      "transition_logit_scale": 0.13014795636509907,
+      "beam_size": 3,
+      "beam_len_penalty": 0.4821178059474249,
+      "combo_beta": 2.313245357229333,
+      "dropout": 0.15786604446207692,
+      "temperature": 0.09576698921998739,
+      "seq_num_layers": 3,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 1,
+      "best_val_item": {
+        "epoch": 1,
+        "f1": 0.0171,
+        "pairs_f1": 0.0005,
+        "full_f1": 0.5994,
+        "full_pairs_f1": 0.2879
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Yelp --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Yelp/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name yelp_both_pipeline_v1_tune_trial_003 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 0 --f1_floor_margin 0.002 --early_stop_metric full_combo --enable_pairwise_loss 1 --lr 0.0004994637681572835 --lambda_pair 0.17317775748211237 --pair_max_future 4 --lambda_transition 0.13760133870709546 --transition_logit_scale 0.13014795636509907 --beam_size 3 --beam_len_penalty 0.4821178059474249 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 2.313245357229333 --dropout 0.15786604446207692 --temperature 0.09576698921998739 --seq_num_layers 3 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.07419834056626978 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs/04-16-15:27 yelp_both_pipeline_v1_tune_trial_003(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_both_pipeline_v1_tune_trial_003",
+      "trial_name": "yelp_both_pipeline_v1_tune_trial_003"
+    }
+  },
+  {
+    "number": 4,
+    "state": "TrialState.COMPLETE",
+    "value": 1.7494,
+    "params": {
+      "soft_constraint_scale": 0.017951965290462297,
+      "lr": 0.00034388594951583075,
+      "lambda_pair": 0.10544864854701166,
+      "pair_max_future": 6,
+      "lambda_transition": 0.18868890181514686,
+      "transition_logit_scale": 0.12658290075377038,
+      "beam_size": 3,
+      "beam_len_penalty": 0.27884553289318714,
+      "combo_beta": 2.499412655269407,
+      "dropout": 0.18377986407845154,
+      "temperature": 0.06652634595419239,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 2,
+      "best_val_item": {
+        "epoch": 2,
+        "f1": 0.0136,
+        "pairs_f1": 0.0004,
+        "full_f1": 0.5978,
+        "full_pairs_f1": 0.2879
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Yelp --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Yelp/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name yelp_both_pipeline_v1_tune_trial_004 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 0 --f1_floor_margin 0.002 --early_stop_metric full_combo --enable_pairwise_loss 1 --lr 0.00034388594951583075 --lambda_pair 0.10544864854701166 --pair_max_future 6 --lambda_transition 0.18868890181514686 --transition_logit_scale 0.12658290075377038 --beam_size 3 --beam_len_penalty 0.27884553289318714 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 2.499412655269407 --dropout 0.18377986407845154 --temperature 0.06652634595419239 --seq_num_layers 2 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.017951965290462297 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs/04-16-15:35 yelp_both_pipeline_v1_tune_trial_004(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_both_pipeline_v1_tune_trial_004",
+      "trial_name": "yelp_both_pipeline_v1_tune_trial_004"
+    }
+  },
+  {
+    "number": 5,
+    "state": "TrialState.COMPLETE",
+    "value": 1.7521,
+    "params": {
+      "soft_constraint_scale": 0.06836216441317042,
+      "lr": 0.0003993705682999137,
+      "lambda_pair": 0.061269673836848844,
+      "pair_max_future": 6,
+      "lambda_transition": 0.1386790183633733,
+      "transition_logit_scale": 0.19591045205847551,
+      "beam_size": 3,
+      "beam_len_penalty": 0.4171188206252052,
+      "combo_beta": 1.9758275934064884,
+      "dropout": 0.15980313945103236,
+      "temperature": 0.06804440622160271,
+      "seq_num_layers": 3,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 16
+    },
+    "user_attrs": {
+      "best_val_epoch": 5,
+      "best_val_item": {
+        "epoch": 5,
+        "f1": 0.02,
+        "pairs_f1": 0.001,
+        "full_f1": 0.6009,
+        "full_pairs_f1": 0.2878
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Yelp --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Yelp/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name yelp_both_pipeline_v1_tune_trial_005 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 0 --f1_floor_margin 0.002 --early_stop_metric full_combo --enable_pairwise_loss 1 --lr 0.0003993705682999137 --lambda_pair 0.061269673836848844 --pair_max_future 6 --lambda_transition 0.1386790183633733 --transition_logit_scale 0.19591045205847551 --beam_size 3 --beam_len_penalty 0.4171188206252052 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 1.9758275934064884 --dropout 0.15980313945103236 --temperature 0.06804440622160271 --seq_num_layers 3 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.06836216441317042 --soft_constraint_dist_emb_dim 16 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs/04-16-15:45 yelp_both_pipeline_v1_tune_trial_005(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_both_pipeline_v1_tune_trial_005",
+      "trial_name": "yelp_both_pipeline_v1_tune_trial_005"
+    }
+  },
+  {
+    "number": 6,
+    "state": "TrialState.COMPLETE",
+    "value": 1.7583,
+    "params": {
+      "soft_constraint_scale": 0.07903668540158991,
+      "lr": 0.0004673570731306835,
+      "lambda_pair": 0.16659825439743392,
+      "pair_max_future": 6,
+      "lambda_transition": 0.08260948751514435,
+      "transition_logit_scale": 0.2907728698865922,
+      "beam_size": 3,
+      "beam_len_penalty": 0.46331447067470943,
+      "combo_beta": 2.5602566338108823,
+      "dropout": 0.08703438600353917,
+      "temperature": 0.07863357855049277,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 2,
+      "best_val_item": {
+        "epoch": 2,
+        "f1": 0.0165,
+        "pairs_f1": 0.0003,
+        "full_f1": 0.5991,
+        "full_pairs_f1": 0.2898
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Yelp --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Yelp/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name yelp_both_pipeline_v1_tune_trial_006 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 0 --f1_floor_margin 0.002 --early_stop_metric full_combo --enable_pairwise_loss 1 --lr 0.0004673570731306835 --lambda_pair 0.16659825439743392 --pair_max_future 6 --lambda_transition 0.08260948751514435 --transition_logit_scale 0.2907728698865922 --beam_size 3 --beam_len_penalty 0.46331447067470943 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 2.5602566338108823 --dropout 0.08703438600353917 --temperature 0.07863357855049277 --seq_num_layers 2 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.07903668540158991 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs/04-16-15:57 yelp_both_pipeline_v1_tune_trial_006(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_both_pipeline_v1_tune_trial_006",
+      "trial_name": "yelp_both_pipeline_v1_tune_trial_006"
+    }
+  },
+  {
+    "number": 7,
+    "state": "TrialState.COMPLETE",
+    "value": 1.7469999999999999,
+    "params": {
+      "soft_constraint_scale": 0.0221316386083266,
+      "lr": 0.0004087936126073267,
+      "lambda_pair": 0.16328124003068625,
+      "pair_max_future": 6,
+      "lambda_transition": 0.08707360925854157,
+      "transition_logit_scale": 0.08508518633555077,
+      "beam_size": 3,
+      "beam_len_penalty": 0.5902913329421138,
+      "combo_beta": 3.8306211403371426,
+      "dropout": 0.1873784026347404,
+      "temperature": 0.06725227814790548,
+      "seq_num_layers": 3,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 16
+    },
+    "user_attrs": {
+      "best_val_epoch": 3,
+      "best_val_item": {
+        "epoch": 3,
+        "f1": 0.0184,
+        "pairs_f1": 0.0005,
+        "full_f1": 0.601,
+        "full_pairs_f1": 0.2865
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Yelp --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Yelp/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name yelp_both_pipeline_v1_tune_trial_007 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 0 --f1_floor_margin 0.002 --early_stop_metric full_combo --enable_pairwise_loss 1 --lr 0.0004087936126073267 --lambda_pair 0.16328124003068625 --pair_max_future 6 --lambda_transition 0.08707360925854157 --transition_logit_scale 0.08508518633555077 --beam_size 3 --beam_len_penalty 0.5902913329421138 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 3.8306211403371426 --dropout 0.1873784026347404 --temperature 0.06725227814790548 --seq_num_layers 3 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.0221316386083266 --soft_constraint_dist_emb_dim 16 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs/04-16-16:06 yelp_both_pipeline_v1_tune_trial_007(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_both_pipeline_v1_tune_trial_007",
+      "trial_name": "yelp_both_pipeline_v1_tune_trial_007"
+    }
+  },
+  {
+    "number": 8,
+    "state": "TrialState.COMPLETE",
+    "value": 1.7557,
+    "params": {
+      "soft_constraint_scale": 0.03332548029498894,
+      "lr": 0.0003437222036922083,
+      "lambda_pair": 0.11428961143488439,
+      "pair_max_future": 4,
+      "lambda_transition": 0.15591706158753332,
+      "transition_logit_scale": 0.09682890666295736,
+      "beam_size": 3,
+      "beam_len_penalty": 0.2635645392034843,
+      "combo_beta": 2.833611670036544,
+      "dropout": 0.084302204958471,
+      "temperature": 0.07379422987528628,
+      "seq_num_layers": 3,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 8,
+      "best_val_item": {
+        "epoch": 8,
+        "f1": 0.0182,
+        "pairs_f1": 0.0006,
+        "full_f1": 0.5997,
+        "full_pairs_f1": 0.289
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Yelp --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Yelp/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name yelp_both_pipeline_v1_tune_trial_008 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 0 --f1_floor_margin 0.002 --early_stop_metric full_combo --enable_pairwise_loss 1 --lr 0.0003437222036922083 --lambda_pair 0.11428961143488439 --pair_max_future 4 --lambda_transition 0.15591706158753332 --transition_logit_scale 0.09682890666295736 --beam_size 3 --beam_len_penalty 0.2635645392034843 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 2.833611670036544 --dropout 0.084302204958471 --temperature 0.07379422987528628 --seq_num_layers 3 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.03332548029498894 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs/04-16-16:17 yelp_both_pipeline_v1_tune_trial_008(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_both_pipeline_v1_tune_trial_008",
+      "trial_name": "yelp_both_pipeline_v1_tune_trial_008"
+    }
+  },
+  {
+    "number": 9,
+    "state": "TrialState.COMPLETE",
+    "value": 1.7555,
+    "params": {
+      "soft_constraint_scale": 0.025583823048201657,
+      "lr": 0.00041480365179992273,
+      "lambda_pair": 0.08950120975132289,
+      "pair_max_future": 6,
+      "lambda_transition": 0.19956114419197435,
+      "transition_logit_scale": 0.18185788850231266,
+      "beam_size": 3,
+      "beam_len_penalty": 0.35238754702034264,
+      "combo_beta": 2.5936131567574687,
+      "dropout": 0.11120438256370817,
+      "temperature": 0.07867561719171151,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 16
+    },
+    "user_attrs": {
+      "best_val_epoch": 9,
+      "best_val_item": {
+        "epoch": 9,
+        "f1": 0.0176,
+        "pairs_f1": 0.0001,
+        "full_f1": 0.5991,
+        "full_pairs_f1": 0.2891
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Yelp --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Yelp/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name yelp_both_pipeline_v1_tune_trial_009 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 0 --f1_floor_margin 0.002 --early_stop_metric full_combo --enable_pairwise_loss 1 --lr 0.00041480365179992273 --lambda_pair 0.08950120975132289 --pair_max_future 6 --lambda_transition 0.19956114419197435 --transition_logit_scale 0.18185788850231266 --beam_size 3 --beam_len_penalty 0.35238754702034264 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 2.5936131567574687 --dropout 0.11120438256370817 --temperature 0.07867561719171151 --seq_num_layers 2 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.025583823048201657 --soft_constraint_dist_emb_dim 16 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs/04-16-16:32 yelp_both_pipeline_v1_tune_trial_009(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_both_pipeline_v1_tune_trial_009",
+      "trial_name": "yelp_both_pipeline_v1_tune_trial_009"
+    }
+  },
+  {
+    "number": 10,
+    "state": "TrialState.COMPLETE",
+    "value": 1.7498,
+    "params": {
+      "soft_constraint_scale": 0.0037776709484015555,
+      "lr": 0.0004981012736435571,
+      "lambda_pair": 0.14660429683106976,
+      "pair_max_future": 6,
+      "lambda_transition": 0.053724160179112995,
+      "transition_logit_scale": 0.2949250771485749,
+      "beam_size": 3,
+      "beam_len_penalty": 0.533311599056421,
+      "combo_beta": 1.5399683404434592,
+      "dropout": 0.08224369754599158,
+      "temperature": 0.08827519822227561,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 2,
+      "best_val_item": {
+        "epoch": 2,
+        "f1": 0.0165,
+        "pairs_f1": 0.0003,
+        "full_f1": 0.599,
+        "full_pairs_f1": 0.2877
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Yelp --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Yelp/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name yelp_both_pipeline_v1_tune_trial_010 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 0 --f1_floor_margin 0.002 --early_stop_metric full_combo --enable_pairwise_loss 1 --lr 0.0004981012736435571 --lambda_pair 0.14660429683106976 --pair_max_future 6 --lambda_transition 0.053724160179112995 --transition_logit_scale 0.2949250771485749 --beam_size 3 --beam_len_penalty 0.533311599056421 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 1.5399683404434592 --dropout 0.08224369754599158 --temperature 0.08827519822227561 --seq_num_layers 2 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.0037776709484015555 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs/04-16-16:41 yelp_both_pipeline_v1_tune_trial_010(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_both_pipeline_v1_tune_trial_010",
+      "trial_name": "yelp_both_pipeline_v1_tune_trial_010"
+    }
+  },
+  {
+    "number": 11,
+    "state": "TrialState.COMPLETE",
+    "value": 1.7488000000000001,
+    "params": {
+      "soft_constraint_scale": 0.04824792527365018,
+      "lr": 0.00030445611927820617,
+      "lambda_pair": 0.13387133765314416,
+      "pair_max_future": 4,
+      "lambda_transition": 0.09981466069014079,
+      "transition_logit_scale": 0.05749702283258237,
+      "beam_size": 3,
+      "beam_len_penalty": 0.36601362626069134,
+      "combo_beta": 3.0719189148409316,
+      "dropout": 0.08617609309279402,
+      "temperature": 0.08231382700441023,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 4,
+      "best_val_item": {
+        "epoch": 4,
+        "f1": 0.0145,
+        "pairs_f1": 0.0004,
+        "full_f1": 0.5984,
+        "full_pairs_f1": 0.2876
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Yelp --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Yelp/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name yelp_both_pipeline_v1_tune_trial_011 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 0 --f1_floor_margin 0.002 --early_stop_metric full_combo --enable_pairwise_loss 1 --lr 0.00030445611927820617 --lambda_pair 0.13387133765314416 --pair_max_future 4 --lambda_transition 0.09981466069014079 --transition_logit_scale 0.05749702283258237 --beam_size 3 --beam_len_penalty 0.36601362626069134 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 3.0719189148409316 --dropout 0.08617609309279402 --temperature 0.08231382700441023 --seq_num_layers 2 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.04824792527365018 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_both_pipeline_v1/tuning/logs/04-16-16:51 yelp_both_pipeline_v1_tune_trial_011(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_both_pipeline_v1_tune_trial_011",
+      "trial_name": "yelp_both_pipeline_v1_tune_trial_011"
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[2026-04-04 01:26:13] CWD: /root/autodl-tmp/MyCrossCity/code/new_citypref_llm
+[2026-04-04 01:26:13] CMD: /root/miniconda3/envs/SPOT-Trip/bin/python ./batch_ablation_hparam.py --dataset_name Yelp --run_mode train --seed 2050 --device cuda:0 --output_dir /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_soft_pipeline_v1/ablation/batch_output --exp_prefix yelp_soft_pipeline_v1_ablation --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_soft_pipeline_v1/final_train/logs --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --save_path ../../Yelp/model_save_new --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --semantic_backend qwen --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --qwen_strict 1 --use_enriched_data 1 --use_mamba_backbone 1 --mamba_strict 1 --seq_num_layers 3 --mamba_d_state 32 --mamba_d_conv 4 --mamba_expand 2 --dropout 0.19870688874069625 --temperature 0.09073104164491952 --enable_pairwise_loss 1 --lambda_pair 0.14146035888136166 --pair_max_future 6 --lambda_transition 0.05573173796754207 --transition_logit_scale 0.05749702283258237 --use_beam_search 1 --beam_size 3 --beam_len_penalty 0.5933113553841403 --use_no_repeat_mask 1 --pref_factor_k 4 --lambda_decouple 0.1 --lambda_semantic 0.1 --eta_fixed -1.0 --decode_constraint_mode soft --soft_constraint_scale 0.0011742263783192195 --soft_constraint_dist_emb_dim 16 --enforce_start_end_constraints 1 --epoch 30 --stop_epoch 8 --lr 0.00030668492537806405 --l2 1e-05 --lr_dc 0.3 --lr_dc_step 8 --write_incremental_csv 1 --save_trainable_only 1 --early_stop_metric full_pairs_f1 --combo_beta 3.974611656262081 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --save_dual_best 1 --append_full_reference 0 --hparam_seq_num_layers 1,2,3 --hparam_transition_strength 0.5,1.0,1.5 --hparam_eta_fixed 0.2,0.5,0.8
+
+[1/15] Running yelp_soft_pipeline_v1_ablation_full_s2050 | group=ablation
+[1/15] yelp_soft_pipeline_v1_ablation_full_s2050 done | status=ok | F1=0.0073 Pairs=0.0004 FullPairs=0.2817
+[2/15] Running yelp_soft_pipeline_v1_ablation_no_llm_semantic_s2050 | group=ablation
+[2/15] yelp_soft_pipeline_v1_ablation_no_llm_semantic_s2050 done | status=ok | F1=0.0093 Pairs=0.0001 FullPairs=0.2829
+[3/15] Running yelp_soft_pipeline_v1_ablation_no_disentangle_transfer_s2050 | group=ablation
+[3/15] yelp_soft_pipeline_v1_ablation_no_disentangle_transfer_s2050 done | status=ok | F1=0.0097 Pairs=0.0003 FullPairs=0.2837
+[4/15] Running yelp_soft_pipeline_v1_ablation_no_city_group_pref_s2050 | group=ablation
+[4/15] yelp_soft_pipeline_v1_ablation_no_city_group_pref_s2050 done | status=ok | F1=0.0052 Pairs=0.0002 FullPairs=0.2789
+[5/15] Running yelp_soft_pipeline_v1_ablation_no_generator_constraints_s2050 | group=ablation
+[5/15] yelp_soft_pipeline_v1_ablation_no_generator_constraints_s2050 done | status=ok | F1=0.0062 Pairs=0.0003 FullPairs=0.2810
+[6/15] Running yelp_soft_pipeline_v1_ablation_hard_constraint_variant_s2050 | group=ablation
+[6/15] yelp_soft_pipeline_v1_ablation_hard_constraint_variant_s2050 done | status=ok | F1=0.0137 Pairs=0.0002 FullPairs=0.2025
+[7/15] Running yelp_soft_pipeline_v1_ablation_seq_num_layers_1_s2050 | group=hparam_seq_num_layers
+[7/15] yelp_soft_pipeline_v1_ablation_seq_num_layers_1_s2050 done | status=ok | F1=0.0104 Pairs=0.0005 FullPairs=0.2833
+[8/15] Running yelp_soft_pipeline_v1_ablation_seq_num_layers_2_s2050 | group=hparam_seq_num_layers
+[8/15] yelp_soft_pipeline_v1_ablation_seq_num_layers_2_s2050 done | status=ok | F1=0.0052 Pairs=0.0002 FullPairs=0.2795
+[9/15] Running yelp_soft_pipeline_v1_ablation_seq_num_layers_3_s2050 | group=hparam_seq_num_layers
+[9/15] yelp_soft_pipeline_v1_ablation_seq_num_layers_3_s2050 done | status=ok | F1=0.0087 Pairs=0.0005 FullPairs=0.2825
+[10/15] Running yelp_soft_pipeline_v1_ablation_trans_strength_x0.5_s2050 | group=hparam_transition_strength
+[10/15] yelp_soft_pipeline_v1_ablation_trans_strength_x0.5_s2050 done | status=ok | F1=0.0065 Pairs=0.0005 FullPairs=0.2814
+[11/15] Running yelp_soft_pipeline_v1_ablation_trans_strength_x1_s2050 | group=hparam_transition_strength
+[11/15] yelp_soft_pipeline_v1_ablation_trans_strength_x1_s2050 done | status=ok | F1=0.0079 Pairs=0.0008 FullPairs=0.2822
+[12/15] Running yelp_soft_pipeline_v1_ablation_trans_strength_x1.5_s2050 | group=hparam_transition_strength
+[12/15] yelp_soft_pipeline_v1_ablation_trans_strength_x1.5_s2050 done | status=ok | F1=0.0062 Pairs=0.0004 FullPairs=0.2812
+[13/15] Running yelp_soft_pipeline_v1_ablation_eta_fixed_0.2_s2050 | group=hparam_eta_fixed
+[13/15] yelp_soft_pipeline_v1_ablation_eta_fixed_0.2_s2050 done | status=ok | F1=0.0068 Pairs=0.0006 FullPairs=0.2812
+[14/15] Running yelp_soft_pipeline_v1_ablation_eta_fixed_0.5_s2050 | group=hparam_eta_fixed
+[14/15] yelp_soft_pipeline_v1_ablation_eta_fixed_0.5_s2050 done | status=ok | F1=0.0076 Pairs=0.0003 FullPairs=0.2814
+[15/15] Running yelp_soft_pipeline_v1_ablation_eta_fixed_0.8_s2050 | group=hparam_eta_fixed
+[15/15] yelp_soft_pipeline_v1_ablation_eta_fixed_0.8_s2050 done | status=ok | F1=0.0062 Pairs=0.0002 FullPairs=0.2801
+
+=== Batch finished ===
+Summary CSV: /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_soft_pipeline_v1/ablation/batch_output/summary_yelp_soft_pipeline_v1_ablation_20260404_040354.csv
+Top by combo: yelp_soft_pipeline_v1_ablation_hard_constraint_variant_s2050 | F1=0.0137 | Pairs=0.0002 | FullPairs=0.2025
+
+[2026-04-04 04:03:55] EXIT_CODE: 0

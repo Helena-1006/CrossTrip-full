@@ -1,0 +1,29 @@
+{
+  "trial_number": 10,
+  "trial_name": "cpr_pairs_tune_v1_trial_010",
+  "objective_metric": "pairs_f1",
+  "objective_value": 0.021,
+  "best_val_epoch": 17,
+  "best_val_item": {
+    "epoch": 17,
+    "f1": 0.0599,
+    "pairs_f1": 0.021,
+    "full_f1": 0.4825,
+    "full_pairs_f1": 0.1872
+  },
+  "params": {
+    "lr": 0.00010277206574146651,
+    "lambda_pair": 0.672498758290771,
+    "pair_max_future": 4,
+    "combo_beta": 5.539299887250081,
+    "dropout": 0.07029400294661806,
+    "temperature": 0.0876714229620028,
+    "seq_num_layers": 2,
+    "mamba_d_state": 16,
+    "mamba_expand": 3
+  },
+  "return_code": 0,
+  "log_file": "./optuna_runs/cpr_pairs_tune_v1/logs/03-15-23:37 cpr_pairs_tune_v1_trial_010(2050).log",
+  "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/cpr_pairs_tune_v1_trial_010",
+  "timestamp": "2026-03-16T00:03:22"
+}

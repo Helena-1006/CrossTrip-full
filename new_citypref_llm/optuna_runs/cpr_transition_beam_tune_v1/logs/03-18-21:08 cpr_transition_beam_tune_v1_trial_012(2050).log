@@ -1,0 +1,58 @@
+[2026-03-18 21:08:49] Namespace(dataset_name='Foursquare', ori_data='../../Foursquare/home.txt', dst_data='../../Foursquare/oot.txt', use_enriched_data=True, ori_data_enriched='../../Foursquare/extendData/enriched_home.txt', dst_data_enriched='../../Foursquare/extendData/enriched_oot.txt', trans_data='../../Foursquare/travel.txt', save_path='../../Foursquare/model_save_new/cpr_transition_beam_tune_v1_trial_012', data_split_path='../../Foursquare/data_split_new.pkl', rebuild_split=False, mode='train', device='cuda:0', seed=2050, train_batch=16, test_batch=16, epoch=30, lr=0.00010241900285705644, l2=1e-05, lr_dc=0.3, lr_dc_step=8, save_step=1, best_save=True, save_trainable_only=1, save_optimizer_state=0, stop_epoch=8, early_stop_metric='combo', combo_beta=7.139323846805788, use_f1_floor_filter=0, f1_floor_margin=0.002, save_dual_best=1, run_final_test_after_train=False, log_path='./optuna_runs/cpr_transition_beam_tune_v1/logs', log=True, name='cpr_transition_beam_tune_v1_trial_012', hidden_size=128, dropout=0.05319746723547676, nhead=4, semantic_layers=2, seq_num_layers=2, soft_prompt_len=8, pref_factor_k=4, use_mamba_backbone=1, mamba_d_state=32, mamba_d_conv=4, mamba_expand=3, mamba_strict=True, semantic_backend='qwen', llm_model_name='Qwen/Qwen2.5-1.5B-Instruct', llm_cache_dir='../../code/params', llm_max_length=256, llm_micro_batch=4, llm_gradient_checkpointing=False, llm_dtype='bfloat16', llm_max_traj_tokens=64, gen_loss_chunk_len=16, llm_fallback_names='Qwen/Qwen2.5-0.5B-Instruct', qwen_strict=True, temperature=0.08634650175895604, gamma_city=0.5, lambda_decouple=0.1, lambda_semantic=0.1, lambda_gen=1.0, lambda_transition=1.19682037113088, transition_logit_scale=1.1712227811021876, enable_pairwise_loss=0, lambda_pair=0.0, pair_max_future=8, use_beam_search=1, beam_size=3, beam_len_penalty=0.5878201851565797, pop_bias_scale=0.1, ellipse_filter=False, ellipse_beta=1.2, city_memory_momentum=0.95, city_memory_prior_k=20.0, profile_dim=7, query_dim=7, ckpt_name='model_best.xhr')
+[2026-03-18 21:08:49] Using enriched source files: ../../Foursquare/extendData/enriched_home.txt | ../../Foursquare/extendData/enriched_oot.txt
+[2026-03-18 21:09:53] Epoch 0/30 | Loss 26.700455 | Align 4.189363 | Dec 0.429382 | Sem 3.257839 | Gen 10.038706 | Pair 0.000000 | Trans 10.113184 | SemMix 0.5544 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:10:01] [VAL] Epoch 0 F1: 0.0129 | Pairs_F1: 0.0003 | Full_F1: 0.4546 | Full_Pairs_F1: 0.1640
+[2026-03-18 21:10:01] [MODEL_SELECT] epoch=0 | metric=combo | F1=0.0129 | Pairs=0.0003 | Combo=0.0150 (beta=7.14) | F1_floor=0.0109 | pass_floor=True
+[2026-03-18 21:10:54] Epoch 1/30 | Loss 24.742272 | Align 3.614697 | Dec 0.320664 | Sem 2.514265 | Gen 8.881372 | Pair 0.000000 | Trans 9.995410 | SemMix 0.6431 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:11:01] [VAL] Epoch 1 F1: 0.0195 | Pairs_F1: 0.0005 | Full_F1: 0.4598 | Full_Pairs_F1: 0.1676
+[2026-03-18 21:11:01] [MODEL_SELECT] epoch=1 | metric=combo | F1=0.0195 | Pairs=0.0005 | Combo=0.0233 (beta=7.14) | F1_floor=0.0175 | pass_floor=True
+[2026-03-18 21:11:54] Epoch 2/30 | Loss 23.641568 | Align 3.291997 | Dec 0.252876 | Sem 2.419014 | Gen 8.233844 | Pair 0.000000 | Trans 9.900014 | SemMix 0.6888 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:12:02] [VAL] Epoch 2 F1: 0.0343 | Pairs_F1: 0.0050 | Full_F1: 0.4688 | Full_Pairs_F1: 0.1814
+[2026-03-18 21:12:02] [MODEL_SELECT] epoch=2 | metric=combo | F1=0.0343 | Pairs=0.0050 | Combo=0.0697 (beta=7.14) | F1_floor=0.0323 | pass_floor=True
+[2026-03-18 21:12:54] Epoch 3/30 | Loss 22.919898 | Align 2.910276 | Dec 0.258585 | Sem 2.467873 | Gen 7.967986 | Pair 0.000000 | Trans 9.833547 | SemMix 0.7153 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:13:01] [VAL] Epoch 3 F1: 0.0419 | Pairs_F1: 0.0046 | Full_F1: 0.4739 | Full_Pairs_F1: 0.1866
+[2026-03-18 21:13:01] [MODEL_SELECT] epoch=3 | metric=combo | F1=0.0419 | Pairs=0.0046 | Combo=0.0746 (beta=7.14) | F1_floor=0.0399 | pass_floor=True
+[2026-03-18 21:13:54] Epoch 4/30 | Loss 22.106790 | Align 2.318794 | Dec 0.320461 | Sem 2.569847 | Gen 7.785942 | Pair 0.000000 | Trans 9.786785 | SemMix 0.7259 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:14:01] [VAL] Epoch 4 F1: 0.0448 | Pairs_F1: 0.0051 | Full_F1: 0.4762 | Full_Pairs_F1: 0.1882
+[2026-03-18 21:14:01] [MODEL_SELECT] epoch=4 | metric=combo | F1=0.0448 | Pairs=0.0051 | Combo=0.0811 (beta=7.14) | F1_floor=0.0428 | pass_floor=True
+[2026-03-18 21:14:53] Epoch 5/30 | Loss 21.227119 | Align 1.631594 | Dec 0.369647 | Sem 2.593900 | Gen 7.633449 | Pair 0.000000 | Trans 9.747261 | SemMix 0.7501 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:15:00] [VAL] Epoch 5 F1: 0.0465 | Pairs_F1: 0.0057 | Full_F1: 0.4774 | Full_Pairs_F1: 0.1895
+[2026-03-18 21:15:00] [MODEL_SELECT] epoch=5 | metric=combo | F1=0.0465 | Pairs=0.0057 | Combo=0.0874 (beta=7.14) | F1_floor=0.0445 | pass_floor=True
+[2026-03-18 21:15:52] Epoch 6/30 | Loss 20.513979 | Align 1.121396 | Dec 0.357402 | Sem 2.584479 | Gen 7.484657 | Pair 0.000000 | Trans 9.703826 | SemMix 0.7539 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:15:59] [VAL] Epoch 6 F1: 0.0532 | Pairs_F1: 0.0085 | Full_F1: 0.4805 | Full_Pairs_F1: 0.1935
+[2026-03-18 21:16:00] [MODEL_SELECT] epoch=6 | metric=combo | F1=0.0532 | Pairs=0.0085 | Combo=0.1138 (beta=7.14) | F1_floor=0.0512 | pass_floor=True
+[2026-03-18 21:16:51] Epoch 7/30 | Loss 19.890043 | Align 0.732355 | Dec 0.322314 | Sem 2.554860 | Gen 7.306077 | Pair 0.000000 | Trans 9.662180 | SemMix 0.7668 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:16:58] [VAL] Epoch 7 F1: 0.0545 | Pairs_F1: 0.0091 | Full_F1: 0.4819 | Full_Pairs_F1: 0.1932
+[2026-03-18 21:16:59] [MODEL_SELECT] epoch=7 | metric=combo | F1=0.0545 | Pairs=0.0091 | Combo=0.1194 (beta=7.14) | F1_floor=0.0525 | pass_floor=True
+[2026-03-18 21:17:51] Epoch 8/30 | Loss 19.330748 | Align 0.432817 | Dec 0.305660 | Sem 2.522023 | Gen 7.104040 | Pair 0.000000 | Trans 9.618087 | SemMix 0.7716 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:17:59] [VAL] Epoch 8 F1: 0.0552 | Pairs_F1: 0.0102 | Full_F1: 0.4823 | Full_Pairs_F1: 0.1931
+[2026-03-18 21:17:59] [MODEL_SELECT] epoch=8 | metric=combo | F1=0.0552 | Pairs=0.0102 | Combo=0.1284 (beta=7.14) | F1_floor=0.0532 | pass_floor=True
+[2026-03-18 21:18:50] Epoch 9/30 | Loss 19.138987 | Align 0.362934 | Dec 0.289727 | Sem 2.487013 | Gen 7.012644 | Pair 0.000000 | Trans 9.596875 | SemMix 0.7873 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:18:58] [VAL] Epoch 9 F1: 0.0648 | Pairs_F1: 0.0193 | Full_F1: 0.4855 | Full_Pairs_F1: 0.1976
+[2026-03-18 21:18:58] [MODEL_SELECT] epoch=9 | metric=combo | F1=0.0648 | Pairs=0.0193 | Combo=0.2023 (beta=7.14) | F1_floor=0.0628 | pass_floor=True
+[2026-03-18 21:19:50] Epoch 10/30 | Loss 18.971148 | Align 0.316427 | Dec 0.271141 | Sem 2.467479 | Gen 6.918706 | Pair 0.000000 | Trans 9.577171 | SemMix 0.8003 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:19:58] [VAL] Epoch 10 F1: 0.0606 | Pairs_F1: 0.0140 | Full_F1: 0.4848 | Full_Pairs_F1: 0.1953
+[2026-03-18 21:19:58] [MODEL_SELECT] epoch=10 | metric=combo | F1=0.0606 | Pairs=0.0140 | Combo=0.1608 (beta=7.14) | F1_floor=0.0628 | pass_floor=True
+[2026-03-18 21:20:49] Epoch 11/30 | Loss 18.825097 | Align 0.290851 | Dec 0.263968 | Sem 2.443169 | Gen 6.826027 | Pair 0.000000 | Trans 9.556576 | SemMix 0.8107 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:20:56] [VAL] Epoch 11 F1: 0.0590 | Pairs_F1: 0.0137 | Full_F1: 0.4839 | Full_Pairs_F1: 0.1972
+[2026-03-18 21:20:56] [MODEL_SELECT] epoch=11 | metric=combo | F1=0.0590 | Pairs=0.0137 | Combo=0.1568 (beta=7.14) | F1_floor=0.0628 | pass_floor=True
+[2026-03-18 21:21:48] Epoch 12/30 | Loss 18.675903 | Align 0.257881 | Dec 0.249103 | Sem 2.420141 | Gen 6.741241 | Pair 0.000000 | Trans 9.533474 | SemMix 0.8221 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:21:55] [VAL] Epoch 12 F1: 0.0601 | Pairs_F1: 0.0138 | Full_F1: 0.4847 | Full_Pairs_F1: 0.1972
+[2026-03-18 21:21:55] [MODEL_SELECT] epoch=12 | metric=combo | F1=0.0601 | Pairs=0.0138 | Combo=0.1585 (beta=7.14) | F1_floor=0.0628 | pass_floor=True
+[2026-03-18 21:22:47] Epoch 13/30 | Loss 18.551303 | Align 0.234344 | Dec 0.240734 | Sem 2.402342 | Gen 6.662319 | Pair 0.000000 | Trans 9.517161 | SemMix 0.8326 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:22:55] [VAL] Epoch 13 F1: 0.0616 | Pairs_F1: 0.0142 | Full_F1: 0.4857 | Full_Pairs_F1: 0.1983
+[2026-03-18 21:22:55] [MODEL_SELECT] epoch=13 | metric=combo | F1=0.0616 | Pairs=0.0142 | Combo=0.1630 (beta=7.14) | F1_floor=0.0628 | pass_floor=True
+[2026-03-18 21:23:45] Epoch 14/30 | Loss 18.432508 | Align 0.209755 | Dec 0.228682 | Sem 2.383496 | Gen 6.592046 | Pair 0.000000 | Trans 9.499746 | SemMix 0.8440 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:23:52] [VAL] Epoch 14 F1: 0.0599 | Pairs_F1: 0.0145 | Full_F1: 0.4844 | Full_Pairs_F1: 0.1967
+[2026-03-18 21:23:52] [MODEL_SELECT] epoch=14 | metric=combo | F1=0.0599 | Pairs=0.0145 | Combo=0.1635 (beta=7.14) | F1_floor=0.0628 | pass_floor=True
+[2026-03-18 21:24:44] Epoch 15/30 | Loss 18.295512 | Align 0.189061 | Dec 0.217653 | Sem 2.363236 | Gen 6.507583 | Pair 0.000000 | Trans 9.475758 | SemMix 0.8542 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:24:51] [VAL] Epoch 15 F1: 0.0580 | Pairs_F1: 0.0136 | Full_F1: 0.4832 | Full_Pairs_F1: 0.1957
+[2026-03-18 21:24:51] [MODEL_SELECT] epoch=15 | metric=combo | F1=0.0580 | Pairs=0.0136 | Combo=0.1548 (beta=7.14) | F1_floor=0.0628 | pass_floor=True
+[2026-03-18 21:25:42] Epoch 16/30 | Loss 18.193201 | Align 0.171168 | Dec 0.210619 | Sem 2.344579 | Gen 6.439692 | Pair 0.000000 | Trans 9.464095 | SemMix 0.8605 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:25:49] [VAL] Epoch 16 F1: 0.0586 | Pairs_F1: 0.0142 | Full_F1: 0.4836 | Full_Pairs_F1: 0.1977
+[2026-03-18 21:25:49] [MODEL_SELECT] epoch=16 | metric=combo | F1=0.0586 | Pairs=0.0142 | Combo=0.1603 (beta=7.14) | F1_floor=0.0628 | pass_floor=True
+[2026-03-18 21:26:41] Epoch 17/30 | Loss 18.145836 | Align 0.166726 | Dec 0.206139 | Sem 2.340050 | Gen 6.410084 | Pair 0.000000 | Trans 9.453722 | SemMix 0.8638 | ValidSteps 148/148 | Skipped 0
+[2026-03-18 21:26:48] [VAL] Epoch 17 F1: 0.0616 | Pairs_F1: 0.0140 | Full_F1: 0.4853 | Full_Pairs_F1: 0.1984
+[2026-03-18 21:26:48] [MODEL_SELECT] epoch=17 | metric=combo | F1=0.0616 | Pairs=0.0140 | Combo=0.1618 (beta=7.14) | F1_floor=0.0628 | pass_floor=True
+[2026-03-18 21:26:48] Early stopped!
+[2026-03-18 21:26:48] Training finished. Best epoch: 9

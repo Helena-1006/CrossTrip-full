@@ -1,0 +1,33 @@
+{
+  "trial_number": 11,
+  "trial_name": "yelp_15b_small_tune_v1_trial_011",
+  "objective_metric": "full_pairs_f1",
+  "objective_value": 0.2073,
+  "best_val_epoch": 8,
+  "best_val_item": {
+    "epoch": 8,
+    "f1": 0.0181,
+    "pairs_f1": 0.0001,
+    "full_f1": 0.5182,
+    "full_pairs_f1": 0.2073
+  },
+  "params": {
+    "lr": 8.015650375117682e-05,
+    "lambda_pair": 0.1816558104019384,
+    "pair_max_future": 4,
+    "lambda_transition": 0.2708300412989467,
+    "transition_logit_scale": 0.5277055079835349,
+    "beam_size": 3,
+    "beam_len_penalty": 0.12335623428725143,
+    "combo_beta": 2.2634933830964377,
+    "dropout": 0.13934802131883445,
+    "temperature": 0.08845721189887112,
+    "seq_num_layers": 2,
+    "mamba_d_state": 16,
+    "mamba_expand": 2
+  },
+  "return_code": 0,
+  "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/optuna_runs/yelp_15b_small_tune_v1/logs/04-01-23:57 yelp_15b_small_tune_v1_trial_011(2050).log",
+  "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_15b_small_tune_v1_trial_011",
+  "timestamp": "2026-04-02T00:09:20"
+}

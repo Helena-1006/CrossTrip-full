@@ -1,0 +1,83 @@
+{
+  "dataset_name": "Foursquare",
+  "ckpt_full": "../../Foursquare/model_save_new/fsq_both_pipeline_v1_final_s2050/model_best.xhr",
+  "ckpt_ablation": "../../Foursquare/model_save_new/fsq_tsne_no_decouple_s2050/model_best.xhr",
+  "metrics": {
+    "full": {
+      "pairwise": [
+        {
+          "pair": "0-1",
+          "mean_cosine": 0.01556886825710535,
+          "mean_abs_cosine": 0.021322395652532578
+        },
+        {
+          "pair": "0-2",
+          "mean_cosine": 0.03022591583430767,
+          "mean_abs_cosine": 0.0326022244989872
+        },
+        {
+          "pair": "0-3",
+          "mean_cosine": 0.008708849549293518,
+          "mean_abs_cosine": 0.019021622836589813
+        },
+        {
+          "pair": "1-2",
+          "mean_cosine": 0.017661966383457184,
+          "mean_abs_cosine": 0.0246637761592865
+        },
+        {
+          "pair": "1-3",
+          "mean_cosine": -0.008360505104064941,
+          "mean_abs_cosine": 0.019690873101353645
+        },
+        {
+          "pair": "2-3",
+          "mean_cosine": -0.007863098755478859,
+          "mean_abs_cosine": 0.01981204003095627
+        }
+      ],
+      "mean_pairwise_cosine": 0.009323666027436653,
+      "mean_pairwise_abs_cosine": 0.022852155379951,
+      "N": 352,
+      "K": 4
+    },
+    "ablation": {
+      "pairwise": [
+        {
+          "pair": "0-1",
+          "mean_cosine": -0.17665353417396545,
+          "mean_abs_cosine": 0.17665353417396545
+        },
+        {
+          "pair": "0-2",
+          "mean_cosine": -0.11094120144844055,
+          "mean_abs_cosine": 0.11300429701805115
+        },
+        {
+          "pair": "0-3",
+          "mean_cosine": -0.2872927486896515,
+          "mean_abs_cosine": 0.2872927486896515
+        },
+        {
+          "pair": "1-2",
+          "mean_cosine": -0.1591881960630417,
+          "mean_abs_cosine": 0.15921448171138763
+        },
+        {
+          "pair": "1-3",
+          "mean_cosine": -0.16017962992191315,
+          "mean_abs_cosine": 0.16028016805648804
+        },
+        {
+          "pair": "2-3",
+          "mean_cosine": -0.1944742649793625,
+          "mean_abs_cosine": 0.1944742649793625
+        }
+      ],
+      "mean_pairwise_cosine": -0.18145492921272913,
+      "mean_pairwise_abs_cosine": 0.18181991577148438,
+      "N": 352,
+      "K": 4
+    }
+  }
+}

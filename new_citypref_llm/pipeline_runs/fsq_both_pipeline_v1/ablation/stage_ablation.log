@@ -1,0 +1,39 @@
+[2026-04-16 21:32:34] CWD: /root/autodl-tmp/MyCrossCity/code/new_citypref_llm
+[2026-04-16 21:32:34] CMD: /root/miniconda3/envs/SPOT-Trip/bin/python ./batch_ablation_hparam.py --dataset_name Foursquare --run_mode train --seed 2050 --device cuda:0 --output_dir /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_both_pipeline_v1/ablation/batch_output --exp_prefix fsq_both_pipeline_v1_ablation --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_both_pipeline_v1/final_train/logs --data_split_path ../../Foursquare/data_split_new.pkl --save_path ../../Foursquare/model_save_new --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --semantic_backend qwen --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --qwen_strict 1 --use_enriched_data 1 --use_mamba_backbone 1 --mamba_strict 1 --seq_num_layers 3 --mamba_d_state 32 --mamba_d_conv 4 --mamba_expand 2 --dropout 0.13030822625040137 --temperature 0.06413239744570416 --enable_pairwise_loss 1 --lambda_pair 0.049009977603333685 --pair_max_future 6 --lambda_transition 0.1374167334183384 --transition_logit_scale 0.2222178005094156 --use_beam_search 1 --beam_size 3 --beam_len_penalty 0.44349753088705746 --use_no_repeat_mask 1 --pref_factor_k 4 --lambda_decouple 0.1 --lambda_semantic 0.1 --eta_fixed -1.0 --decode_constraint_mode soft --soft_constraint_scale 0.07498466069744883 --soft_constraint_dist_emb_dim 32 --enforce_start_end_constraints 1 --epoch 30 --stop_epoch 8 --lr 0.0004562487002247504 --l2 1e-05 --lr_dc 0.3 --lr_dc_step 8 --write_incremental_csv 1 --save_trainable_only 1 --early_stop_metric full_pairs_f1 --combo_beta 2.0984134923431585 --use_f1_floor_filter 0 --f1_floor_margin 0.002 --save_dual_best 1 --append_full_reference 0 --hparam_seq_num_layers 1,2,3 --hparam_lambda_pair 0.25,0.5,1.0,1.5,2.0 --hparam_transition_strength 1.0 --hparam_eta_fixed 0.0,0.2,0.4,0.6,0.8
+
+[1/15] Running fsq_both_pipeline_v1_ablation_full_s2050 | group=ablation
+[1/15] fsq_both_pipeline_v1_ablation_full_s2050 done | status=ok | F1=0.0359 Pairs=0.0013 FullPairs=0.2323
+[2/15] Running fsq_both_pipeline_v1_ablation_no_llm_semantic_s2050 | group=ablation
+[2/15] fsq_both_pipeline_v1_ablation_no_llm_semantic_s2050 done | status=ok | F1=0.0369 Pairs=0.0013 FullPairs=0.2320
+[3/15] Running fsq_both_pipeline_v1_ablation_no_disentangle_transfer_s2050 | group=ablation
+[3/15] fsq_both_pipeline_v1_ablation_no_disentangle_transfer_s2050 done | status=ok | F1=0.0346 Pairs=0.0009 FullPairs=0.2305
+[4/15] Running fsq_both_pipeline_v1_ablation_no_city_group_pref_s2050 | group=ablation
+[4/15] fsq_both_pipeline_v1_ablation_no_city_group_pref_s2050 done | status=ok | F1=0.0187 Pairs=0.0002 FullPairs=0.2192
+[5/15] Running fsq_both_pipeline_v1_ablation_no_generator_constraints_s2050 | group=ablation
+[5/15] fsq_both_pipeline_v1_ablation_no_generator_constraints_s2050 done | status=ok | F1=0.0357 Pairs=0.0023 FullPairs=0.2386
+[6/15] Running fsq_both_pipeline_v1_ablation_hard_constraint_variant_s2050 | group=ablation
+[6/15] fsq_both_pipeline_v1_ablation_hard_constraint_variant_s2050 done | status=ok | F1=0.0468 Pairs=0.0044 FullPairs=0.1799
+[7/15] Running fsq_both_pipeline_v1_ablation_seq_num_layers_1_s2050 | group=hparam_seq_num_layers
+[7/15] fsq_both_pipeline_v1_ablation_seq_num_layers_1_s2050 done | status=ok | F1=0.0353 Pairs=0.0033 FullPairs=0.2294
+[8/15] Running fsq_both_pipeline_v1_ablation_seq_num_layers_2_s2050 | group=hparam_seq_num_layers
+[8/15] fsq_both_pipeline_v1_ablation_seq_num_layers_2_s2050 done | status=ok | F1=0.0400 Pairs=0.0019 FullPairs=0.2316
+[9/15] Running fsq_both_pipeline_v1_ablation_seq_num_layers_3_s2050 | group=hparam_seq_num_layers
+[9/15] fsq_both_pipeline_v1_ablation_seq_num_layers_3_s2050 done | status=ok | F1=0.0359 Pairs=0.0013 FullPairs=0.2323
+[10/15] Running fsq_both_pipeline_v1_ablation_trans_strength_x1_s2050 | group=hparam_transition_strength
+[10/15] fsq_both_pipeline_v1_ablation_trans_strength_x1_s2050 done | status=ok | F1=0.0359 Pairs=0.0013 FullPairs=0.2323
+[11/15] Running fsq_both_pipeline_v1_ablation_eta_fixed_0_s2050 | group=hparam_eta_fixed
+[11/15] fsq_both_pipeline_v1_ablation_eta_fixed_0_s2050 done | status=ok | F1=0.0380 Pairs=0.0011 FullPairs=0.2336
+[12/15] Running fsq_both_pipeline_v1_ablation_eta_fixed_0.2_s2050 | group=hparam_eta_fixed
+[12/15] fsq_both_pipeline_v1_ablation_eta_fixed_0.2_s2050 done | status=ok | F1=0.0355 Pairs=0.0013 FullPairs=0.2316
+[13/15] Running fsq_both_pipeline_v1_ablation_eta_fixed_0.4_s2050 | group=hparam_eta_fixed
+[13/15] fsq_both_pipeline_v1_ablation_eta_fixed_0.4_s2050 done | status=ok | F1=0.0333 Pairs=0.0014 FullPairs=0.2302
+[14/15] Running fsq_both_pipeline_v1_ablation_eta_fixed_0.6_s2050 | group=hparam_eta_fixed
+[14/15] fsq_both_pipeline_v1_ablation_eta_fixed_0.6_s2050 done | status=ok | F1=0.0325 Pairs=0.0010 FullPairs=0.2298
+[15/15] Running fsq_both_pipeline_v1_ablation_eta_fixed_0.8_s2050 | group=hparam_eta_fixed
+[15/15] fsq_both_pipeline_v1_ablation_eta_fixed_0.8_s2050 done | status=ok | F1=0.0305 Pairs=0.0007 FullPairs=0.2292
+
+=== Batch finished ===
+Summary CSV: /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_both_pipeline_v1/ablation/batch_output/summary_fsq_both_pipeline_v1_ablation_20260416_233810.csv
+Top by combo: fsq_both_pipeline_v1_ablation_hard_constraint_variant_s2050 | F1=0.0468 | Pairs=0.0044 | FullPairs=0.1799
+
+[2026-04-16 23:38:10] EXIT_CODE: 0

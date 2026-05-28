@@ -1,0 +1,33 @@
+{
+  "trial_number": 25,
+  "trial_name": "cpr_transition_beam_tune_v1_trial_025",
+  "objective_metric": "pairs_f1",
+  "objective_value": 0.0206,
+  "best_val_epoch": 6,
+  "best_val_item": {
+    "epoch": 6,
+    "f1": 0.0637,
+    "pairs_f1": 0.0206,
+    "full_f1": 0.4847,
+    "full_pairs_f1": 0.2001
+  },
+  "params": {
+    "lr": 0.00016354170907985458,
+    "lambda_pair": 0.0,
+    "pair_max_future": 8,
+    "lambda_transition": 1.0607424641515804,
+    "transition_logit_scale": 0.9960597251849626,
+    "beam_size": 3,
+    "beam_len_penalty": 0.2972381504192186,
+    "combo_beta": 5.377899974499302,
+    "dropout": 0.15976459767195123,
+    "temperature": 0.059932338091284024,
+    "seq_num_layers": 2,
+    "mamba_d_state": 32,
+    "mamba_expand": 3
+  },
+  "return_code": 0,
+  "log_file": "./optuna_runs/cpr_transition_beam_tune_v1/logs/03-19-01:03 cpr_transition_beam_tune_v1_trial_025(2050).log",
+  "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/cpr_transition_beam_tune_v1_trial_025",
+  "timestamp": "2026-03-19T01:18:17"
+}

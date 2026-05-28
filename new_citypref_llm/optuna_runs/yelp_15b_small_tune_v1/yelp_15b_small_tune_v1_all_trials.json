@@ -1,0 +1,398 @@
+[
+  {
+    "number": 0,
+    "state": "TrialState.COMPLETE",
+    "value": 0.2114,
+    "params": {
+      "lr": 0.00014309809810880375,
+      "lambda_pair": 0.4719591076301768,
+      "pair_max_future": 8,
+      "lambda_transition": 0.17671728361135663,
+      "transition_logit_scale": 0.7057003717741315,
+      "beam_size": 7,
+      "beam_len_penalty": 0.3047806689421533,
+      "combo_beta": 2.2634933830964377,
+      "dropout": 0.2632051692804426,
+      "temperature": 0.10504829697020227,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2
+    },
+    "user_attrs": {
+      "best_val_epoch": 19,
+      "best_val_item": {
+        "epoch": 19,
+        "f1": 0.0214,
+        "pairs_f1": 0.0062,
+        "full_f1": 0.5193,
+        "full_pairs_f1": 0.2114
+      },
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/optuna_runs/yelp_15b_small_tune_v1/logs/04-01-21:35 yelp_15b_small_tune_v1_trial_000(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_15b_small_tune_v1_trial_000",
+      "trial_name": "yelp_15b_small_tune_v1_trial_000"
+    }
+  },
+  {
+    "number": 1,
+    "state": "TrialState.COMPLETE",
+    "value": 0.2105,
+    "params": {
+      "lr": 0.0002596502911087939,
+      "lambda_pair": 0.4183058536382258,
+      "pair_max_future": 4,
+      "lambda_transition": 0.5966874991382558,
+      "transition_logit_scale": 0.16158784797140174,
+      "beam_size": 5,
+      "beam_len_penalty": 0.5265529725072529,
+      "combo_beta": 2.2634933830964377,
+      "dropout": 0.19099201303308022,
+      "temperature": 0.1189096877015418,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2
+    },
+    "user_attrs": {
+      "best_val_epoch": 6,
+      "best_val_item": {
+        "epoch": 6,
+        "f1": 0.0242,
+        "pairs_f1": 0.0035,
+        "full_f1": 0.5218,
+        "full_pairs_f1": 0.2105
+      },
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/optuna_runs/yelp_15b_small_tune_v1/logs/04-01-21:57 yelp_15b_small_tune_v1_trial_001(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_15b_small_tune_v1_trial_001",
+      "trial_name": "yelp_15b_small_tune_v1_trial_001"
+    }
+  },
+  {
+    "number": 2,
+    "state": "TrialState.COMPLETE",
+    "value": 0.2135,
+    "params": {
+      "lr": 0.0004421206523113628,
+      "lambda_pair": 0.07415356011717347,
+      "pair_max_future": 4,
+      "lambda_transition": 0.11150286871666779,
+      "transition_logit_scale": 0.1134787841314744,
+      "beam_size": 3,
+      "beam_len_penalty": 0.4422800705989885,
+      "combo_beta": 2.2634933830964377,
+      "dropout": 0.13266038732619795,
+      "temperature": 0.09096176093766724,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2
+    },
+    "user_attrs": {
+      "best_val_epoch": 2,
+      "best_val_item": {
+        "epoch": 2,
+        "f1": 0.0272,
+        "pairs_f1": 0.0039,
+        "full_f1": 0.5237,
+        "full_pairs_f1": 0.2135
+      },
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/optuna_runs/yelp_15b_small_tune_v1/logs/04-01-22:08 yelp_15b_small_tune_v1_trial_002(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_15b_small_tune_v1_trial_002",
+      "trial_name": "yelp_15b_small_tune_v1_trial_002"
+    }
+  },
+  {
+    "number": 3,
+    "state": "TrialState.COMPLETE",
+    "value": 0.2134,
+    "params": {
+      "lr": 0.0001393613586549575,
+      "lambda_pair": 0.13272673847923225,
+      "pair_max_future": 8,
+      "lambda_transition": 0.5988446712049922,
+      "transition_logit_scale": 0.6895554719851686,
+      "beam_size": 3,
+      "beam_len_penalty": 0.256473460368317,
+      "combo_beta": 2.2634933830964377,
+      "dropout": 0.22590262088123853,
+      "temperature": 0.08626490714458666,
+      "seq_num_layers": 2,
+      "mamba_d_state": 16,
+      "mamba_expand": 2
+    },
+    "user_attrs": {
+      "best_val_epoch": 7,
+      "best_val_item": {
+        "epoch": 7,
+        "f1": 0.0289,
+        "pairs_f1": 0.0057,
+        "full_f1": 0.5237,
+        "full_pairs_f1": 0.2134
+      },
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/optuna_runs/yelp_15b_small_tune_v1/logs/04-01-22:15 yelp_15b_small_tune_v1_trial_003(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_15b_small_tune_v1_trial_003",
+      "trial_name": "yelp_15b_small_tune_v1_trial_003"
+    }
+  },
+  {
+    "number": 4,
+    "state": "TrialState.COMPLETE",
+    "value": 0.2118,
+    "params": {
+      "lr": 0.0002696141478900655,
+      "lambda_pair": 0.5408806726860437,
+      "pair_max_future": 8,
+      "lambda_transition": 0.17341976137192827,
+      "transition_logit_scale": 0.287087932753455,
+      "beam_size": 3,
+      "beam_len_penalty": 0.7396741430141164,
+      "combo_beta": 2.2634933830964377,
+      "dropout": 0.14739295266331792,
+      "temperature": 0.07412079041331246,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2
+    },
+    "user_attrs": {
+      "best_val_epoch": 5,
+      "best_val_item": {
+        "epoch": 5,
+        "f1": 0.0252,
+        "pairs_f1": 0.0037,
+        "full_f1": 0.5224,
+        "full_pairs_f1": 0.2118
+      },
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/optuna_runs/yelp_15b_small_tune_v1/logs/04-01-22:27 yelp_15b_small_tune_v1_trial_004(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_15b_small_tune_v1_trial_004",
+      "trial_name": "yelp_15b_small_tune_v1_trial_004"
+    }
+  },
+  {
+    "number": 5,
+    "state": "TrialState.COMPLETE",
+    "value": 0.2125,
+    "params": {
+      "lr": 9.764719954025586e-05,
+      "lambda_pair": 0.23613720749135303,
+      "pair_max_future": 8,
+      "lambda_transition": 0.5938060082215523,
+      "transition_logit_scale": 0.6981689386152412,
+      "beam_size": 7,
+      "beam_len_penalty": 0.6394102071320923,
+      "combo_beta": 2.2634933830964377,
+      "dropout": 0.21006256026628078,
+      "temperature": 0.0991820904116951,
+      "seq_num_layers": 2,
+      "mamba_d_state": 16,
+      "mamba_expand": 2
+    },
+    "user_attrs": {
+      "best_val_epoch": 22,
+      "best_val_item": {
+        "epoch": 22,
+        "f1": 0.0268,
+        "pairs_f1": 0.0061,
+        "full_f1": 0.5224,
+        "full_pairs_f1": 0.2125
+      },
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/optuna_runs/yelp_15b_small_tune_v1/logs/04-01-22:37 yelp_15b_small_tune_v1_trial_005(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_15b_small_tune_v1_trial_005",
+      "trial_name": "yelp_15b_small_tune_v1_trial_005"
+    }
+  },
+  {
+    "number": 6,
+    "state": "TrialState.COMPLETE",
+    "value": 0.2129,
+    "params": {
+      "lr": 0.00027062693591595795,
+      "lambda_pair": 0.12374039036469149,
+      "pair_max_future": 8,
+      "lambda_transition": 0.48757944834195255,
+      "transition_logit_scale": 0.37432287432959277,
+      "beam_size": 3,
+      "beam_len_penalty": 0.4170534713934451,
+      "combo_beta": 2.2634933830964377,
+      "dropout": 0.2811305206761608,
+      "temperature": 0.08086982917171479,
+      "seq_num_layers": 2,
+      "mamba_d_state": 16,
+      "mamba_expand": 2
+    },
+    "user_attrs": {
+      "best_val_epoch": 4,
+      "best_val_item": {
+        "epoch": 4,
+        "f1": 0.0271,
+        "pairs_f1": 0.0033,
+        "full_f1": 0.5236,
+        "full_pairs_f1": 0.2129
+      },
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/optuna_runs/yelp_15b_small_tune_v1/logs/04-01-23:01 yelp_15b_small_tune_v1_trial_006(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_15b_small_tune_v1_trial_006",
+      "trial_name": "yelp_15b_small_tune_v1_trial_006"
+    }
+  },
+  {
+    "number": 7,
+    "state": "TrialState.COMPLETE",
+    "value": 0.2129,
+    "params": {
+      "lr": 0.0001740302781180873,
+      "lambda_pair": 0.08224093584955453,
+      "pair_max_future": 8,
+      "lambda_transition": 0.35028177236273905,
+      "transition_logit_scale": 0.650848193889576,
+      "beam_size": 3,
+      "beam_len_penalty": 0.6272058354385236,
+      "combo_beta": 2.2634933830964377,
+      "dropout": 0.08958872023054823,
+      "temperature": 0.07331124446058482,
+      "seq_num_layers": 2,
+      "mamba_d_state": 16,
+      "mamba_expand": 2
+    },
+    "user_attrs": {
+      "best_val_epoch": 7,
+      "best_val_item": {
+        "epoch": 7,
+        "f1": 0.0281,
+        "pairs_f1": 0.0031,
+        "full_f1": 0.524,
+        "full_pairs_f1": 0.2129
+      },
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/optuna_runs/yelp_15b_small_tune_v1/logs/04-01-23:10 yelp_15b_small_tune_v1_trial_007(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_15b_small_tune_v1_trial_007",
+      "trial_name": "yelp_15b_small_tune_v1_trial_007"
+    }
+  },
+  {
+    "number": 8,
+    "state": "TrialState.COMPLETE",
+    "value": 0.2098,
+    "params": {
+      "lr": 0.0004752181833230575,
+      "lambda_pair": 0.5627366508741714,
+      "pair_max_future": 4,
+      "lambda_transition": 0.41503505884029146,
+      "transition_logit_scale": 0.6235710981251725,
+      "beam_size": 3,
+      "beam_len_penalty": 0.213068887289953,
+      "combo_beta": 2.2634933830964377,
+      "dropout": 0.18908067362161507,
+      "temperature": 0.10710212487687047,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2
+    },
+    "user_attrs": {
+      "best_val_epoch": 2,
+      "best_val_item": {
+        "epoch": 2,
+        "f1": 0.0236,
+        "pairs_f1": 0.0033,
+        "full_f1": 0.5214,
+        "full_pairs_f1": 0.2098
+      },
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/optuna_runs/yelp_15b_small_tune_v1/logs/04-01-23:22 yelp_15b_small_tune_v1_trial_008(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_15b_small_tune_v1_trial_008",
+      "trial_name": "yelp_15b_small_tune_v1_trial_008"
+    }
+  },
+  {
+    "number": 9,
+    "state": "TrialState.COMPLETE",
+    "value": 0.2099,
+    "params": {
+      "lr": 0.00011276407225440138,
+      "lambda_pair": 0.07131570446261819,
+      "pair_max_future": 4,
+      "lambda_transition": 0.17644710719012413,
+      "transition_logit_scale": 0.160578071544483,
+      "beam_size": 3,
+      "beam_len_penalty": 0.25583823048201654,
+      "combo_beta": 2.2634933830964377,
+      "dropout": 0.21954863240238198,
+      "temperature": 0.08750035580921262,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2
+    },
+    "user_attrs": {
+      "best_val_epoch": 18,
+      "best_val_item": {
+        "epoch": 18,
+        "f1": 0.023,
+        "pairs_f1": 0.0035,
+        "full_f1": 0.5212,
+        "full_pairs_f1": 0.2099
+      },
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/optuna_runs/yelp_15b_small_tune_v1/logs/04-01-23:30 yelp_15b_small_tune_v1_trial_009(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_15b_small_tune_v1_trial_009",
+      "trial_name": "yelp_15b_small_tune_v1_trial_009"
+    }
+  },
+  {
+    "number": 10,
+    "state": "TrialState.COMPLETE",
+    "value": 0.211,
+    "params": {
+      "lr": 0.000497912095322613,
+      "lambda_pair": 0.2741913637233748,
+      "pair_max_future": 4,
+      "lambda_transition": 0.06065820042935918,
+      "transition_logit_scale": 0.42964335807902093,
+      "beam_size": 5,
+      "beam_len_penalty": 0.004729410946683554,
+      "combo_beta": 2.2634933830964377,
+      "dropout": 0.08351721395902442,
+      "temperature": 0.0934374496877486,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2
+    },
+    "user_attrs": {
+      "best_val_epoch": 2,
+      "best_val_item": {
+        "epoch": 2,
+        "f1": 0.0239,
+        "pairs_f1": 0.0035,
+        "full_f1": 0.5216,
+        "full_pairs_f1": 0.211
+      },
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/optuna_runs/yelp_15b_small_tune_v1/logs/04-01-23:49 yelp_15b_small_tune_v1_trial_010(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_15b_small_tune_v1_trial_010",
+      "trial_name": "yelp_15b_small_tune_v1_trial_010"
+    }
+  },
+  {
+    "number": 11,
+    "state": "TrialState.COMPLETE",
+    "value": 0.2073,
+    "params": {
+      "lr": 8.015650375117682e-05,
+      "lambda_pair": 0.1816558104019384,
+      "pair_max_future": 4,
+      "lambda_transition": 0.2708300412989467,
+      "transition_logit_scale": 0.5277055079835349,
+      "beam_size": 3,
+      "beam_len_penalty": 0.12335623428725143,
+      "combo_beta": 2.2634933830964377,
+      "dropout": 0.13934802131883445,
+      "temperature": 0.08845721189887112,
+      "seq_num_layers": 2,
+      "mamba_d_state": 16,
+      "mamba_expand": 2
+    },
+    "user_attrs": {
+      "best_val_epoch": 8,
+      "best_val_item": {
+        "epoch": 8,
+        "f1": 0.0181,
+        "pairs_f1": 0.0001,
+        "full_f1": 0.5182,
+        "full_pairs_f1": 0.2073
+      },
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/optuna_runs/yelp_15b_small_tune_v1/logs/04-01-23:57 yelp_15b_small_tune_v1_trial_011(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_15b_small_tune_v1_trial_011",
+      "trial_name": "yelp_15b_small_tune_v1_trial_011"
+    }
+  }
+]

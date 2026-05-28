@@ -1,0 +1,33 @@
+{
+  "trial_number": 9,
+  "trial_name": "yelp_softprompt_v1_trial_009",
+  "objective_metric": "f1",
+  "objective_value": 0.0557,
+  "best_val_epoch": 19,
+  "best_val_item": {
+    "epoch": 19,
+    "f1": 0.0557,
+    "pairs_f1": 0.0139,
+    "full_f1": 0.4817,
+    "full_pairs_f1": 0.195
+  },
+  "params": {
+    "lr": 7.7272411863921e-05,
+    "lambda_pair": 1.1940780800412443,
+    "pair_max_future": 12,
+    "lambda_transition": 0.9444978329715388,
+    "transition_logit_scale": 0.8102063743289938,
+    "beam_size": 3,
+    "beam_len_penalty": 0.627890993747232,
+    "combo_beta": 4.175280709315643,
+    "dropout": 0.11082928685615953,
+    "temperature": 0.056645726662963636,
+    "seq_num_layers": 3,
+    "mamba_d_state": 16,
+    "mamba_expand": 3
+  },
+  "return_code": 0,
+  "log_file": "./optuna_runs/yelp_softprompt_v1/logs/03-26-22:30 yelp_softprompt_v1_trial_009(2050).log",
+  "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_softprompt_v1_trial_009",
+  "timestamp": "2026-03-26T22:50:21"
+}

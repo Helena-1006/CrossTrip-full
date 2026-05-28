@@ -1,0 +1,434 @@
+[
+  {
+    "number": 0,
+    "state": "TrialState.COMPLETE",
+    "value": 0.05689999999999999,
+    "params": {
+      "soft_constraint_scale": 0.025385120286725255,
+      "lr": 0.0005105884412444346,
+      "lambda_pair": 0.18959369053293612,
+      "pair_max_future": 4,
+      "lambda_transition": 0.17979293680874248,
+      "transition_logit_scale": 0.15899095341309433,
+      "beam_size": 3,
+      "beam_len_penalty": 0.31775915415238765,
+      "combo_beta": 4.0,
+      "dropout": 0.18522779364815078,
+      "temperature": 0.08285855017066149,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 1,
+      "best_val_item": {
+        "epoch": 1,
+        "f1": 0.0401,
+        "pairs_f1": 0.0042,
+        "full_f1": 0.5408,
+        "full_pairs_f1": 0.2416
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Foursquare --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/data_split_new.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Foursquare/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name fsq_soft_pipeline_v1_tune_trial_000 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-0.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric combo --enable_pairwise_loss 1 --lr 0.0005105884412444346 --lambda_pair 0.18959369053293612 --pair_max_future 4 --lambda_transition 0.17979293680874248 --transition_logit_scale 0.15899095341309433 --beam_size 3 --beam_len_penalty 0.31775915415238765 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 4.0 --dropout 0.18522779364815078 --temperature 0.08285855017066149 --seq_num_layers 2 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.025385120286725255 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs/04-04-14:16 fsq_soft_pipeline_v1_tune_trial_000(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/fsq_soft_pipeline_v1_tune_trial_000",
+      "trial_name": "fsq_soft_pipeline_v1_tune_trial_000"
+    }
+  },
+  {
+    "number": 1,
+    "state": "TrialState.COMPLETE",
+    "value": 0.0594,
+    "params": {
+      "soft_constraint_scale": 0.05139456357334286,
+      "lr": 0.00047720511515235024,
+      "lambda_pair": 0.07450932921063655,
+      "pair_max_future": 6,
+      "lambda_transition": 0.06319739599387181,
+      "transition_logit_scale": 0.19351293240544964,
+      "beam_size": 3,
+      "beam_len_penalty": 0.5756456540745299,
+      "combo_beta": 4.0,
+      "dropout": 0.142084166707175,
+      "temperature": 0.09949147293804396,
+      "seq_num_layers": 3,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 1,
+      "best_val_item": {
+        "epoch": 1,
+        "f1": 0.0458,
+        "pairs_f1": 0.0034,
+        "full_f1": 0.5434,
+        "full_pairs_f1": 0.2464
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Foursquare --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/data_split_new.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Foursquare/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name fsq_soft_pipeline_v1_tune_trial_001 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-0.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric combo --enable_pairwise_loss 1 --lr 0.00047720511515235024 --lambda_pair 0.07450932921063655 --pair_max_future 6 --lambda_transition 0.06319739599387181 --transition_logit_scale 0.19351293240544964 --beam_size 3 --beam_len_penalty 0.5756456540745299 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 4.0 --dropout 0.142084166707175 --temperature 0.09949147293804396 --seq_num_layers 3 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.05139456357334286 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs/04-04-14:23 fsq_soft_pipeline_v1_tune_trial_001(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/fsq_soft_pipeline_v1_tune_trial_001",
+      "trial_name": "fsq_soft_pipeline_v1_tune_trial_001"
+    }
+  },
+  {
+    "number": 2,
+    "state": "TrialState.COMPLETE",
+    "value": 0.064,
+    "params": {
+      "soft_constraint_scale": 0.07462942141466841,
+      "lr": 0.000309272394422365,
+      "lambda_pair": 0.18934240398207877,
+      "pair_max_future": 4,
+      "lambda_transition": 0.052888310885315946,
+      "transition_logit_scale": 0.2885730879561912,
+      "beam_size": 3,
+      "beam_len_penalty": 0.4539723779761229,
+      "combo_beta": 4.0,
+      "dropout": 0.16266454424451948,
+      "temperature": 0.09317100529492414,
+      "seq_num_layers": 3,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 3,
+      "best_val_item": {
+        "epoch": 3,
+        "f1": 0.0428,
+        "pairs_f1": 0.0053,
+        "full_f1": 0.5419,
+        "full_pairs_f1": 0.244
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Foursquare --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/data_split_new.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Foursquare/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name fsq_soft_pipeline_v1_tune_trial_002 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-0.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric combo --enable_pairwise_loss 1 --lr 0.000309272394422365 --lambda_pair 0.18934240398207877 --pair_max_future 4 --lambda_transition 0.052888310885315946 --transition_logit_scale 0.2885730879561912 --beam_size 3 --beam_len_penalty 0.4539723779761229 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 4.0 --dropout 0.16266454424451948 --temperature 0.09317100529492414 --seq_num_layers 3 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.07462942141466841 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs/04-04-14:30 fsq_soft_pipeline_v1_tune_trial_002(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/fsq_soft_pipeline_v1_tune_trial_002",
+      "trial_name": "fsq_soft_pipeline_v1_tune_trial_002"
+    }
+  },
+  {
+    "number": 3,
+    "state": "TrialState.COMPLETE",
+    "value": 0.0548,
+    "params": {
+      "soft_constraint_scale": 0.024230022560362167,
+      "lr": 0.0003329659734406038,
+      "lambda_pair": 0.12159708989729882,
+      "pair_max_future": 6,
+      "lambda_transition": 0.17633331542539327,
+      "transition_logit_scale": 0.2123625860716583,
+      "beam_size": 3,
+      "beam_len_penalty": 0.355357799487559,
+      "combo_beta": 4.0,
+      "dropout": 0.15008107096567636,
+      "temperature": 0.07923550952762377,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 16
+    },
+    "user_attrs": {
+      "best_val_epoch": 4,
+      "best_val_item": {
+        "epoch": 4,
+        "f1": 0.0432,
+        "pairs_f1": 0.0029,
+        "full_f1": 0.5413,
+        "full_pairs_f1": 0.2453
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Foursquare --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/data_split_new.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Foursquare/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name fsq_soft_pipeline_v1_tune_trial_003 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-0.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric combo --enable_pairwise_loss 1 --lr 0.0003329659734406038 --lambda_pair 0.12159708989729882 --pair_max_future 6 --lambda_transition 0.17633331542539327 --transition_logit_scale 0.2123625860716583 --beam_size 3 --beam_len_penalty 0.355357799487559 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 4.0 --dropout 0.15008107096567636 --temperature 0.07923550952762377 --seq_num_layers 2 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.024230022560362167 --soft_constraint_dist_emb_dim 16 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs/04-04-14:39 fsq_soft_pipeline_v1_tune_trial_003(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/fsq_soft_pipeline_v1_tune_trial_003",
+      "trial_name": "fsq_soft_pipeline_v1_tune_trial_003"
+    }
+  },
+  {
+    "number": 4,
+    "state": "TrialState.COMPLETE",
+    "value": 0.0618,
+    "params": {
+      "soft_constraint_scale": 0.05303841578051829,
+      "lr": 0.0005569210466582196,
+      "lambda_pair": 0.04795871404738394,
+      "pair_max_future": 4,
+      "lambda_transition": 0.0900902713043118,
+      "transition_logit_scale": 0.16095389492207596,
+      "beam_size": 3,
+      "beam_len_penalty": 0.2795755598563826,
+      "combo_beta": 4.0,
+      "dropout": 0.11493045654536985,
+      "temperature": 0.11547556072605872,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 1,
+      "best_val_item": {
+        "epoch": 1,
+        "f1": 0.0414,
+        "pairs_f1": 0.0051,
+        "full_f1": 0.5418,
+        "full_pairs_f1": 0.2427
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Foursquare --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/data_split_new.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Foursquare/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name fsq_soft_pipeline_v1_tune_trial_004 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-0.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric combo --enable_pairwise_loss 1 --lr 0.0005569210466582196 --lambda_pair 0.04795871404738394 --pair_max_future 4 --lambda_transition 0.0900902713043118 --transition_logit_scale 0.16095389492207596 --beam_size 3 --beam_len_penalty 0.2795755598563826 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 4.0 --dropout 0.11493045654536985 --temperature 0.11547556072605872 --seq_num_layers 2 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.05303841578051829 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs/04-04-14:48 fsq_soft_pipeline_v1_tune_trial_004(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/fsq_soft_pipeline_v1_tune_trial_004",
+      "trial_name": "fsq_soft_pipeline_v1_tune_trial_004"
+    }
+  },
+  {
+    "number": 5,
+    "state": "TrialState.COMPLETE",
+    "value": 0.0534,
+    "params": {
+      "soft_constraint_scale": 0.008701794605589858,
+      "lr": 0.00037931430667181116,
+      "lambda_pair": 0.08482792132871747,
+      "pair_max_future": 6,
+      "lambda_transition": 0.17817905827469455,
+      "transition_logit_scale": 0.19002197644085927,
+      "beam_size": 3,
+      "beam_len_penalty": 0.31437874025233586,
+      "combo_beta": 4.0,
+      "dropout": 0.17589047825814272,
+      "temperature": 0.10795576553490692,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 16
+    },
+    "user_attrs": {
+      "best_val_epoch": 6,
+      "best_val_item": {
+        "epoch": 6,
+        "f1": 0.0398,
+        "pairs_f1": 0.0034,
+        "full_f1": 0.5403,
+        "full_pairs_f1": 0.2443
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Foursquare --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/data_split_new.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Foursquare/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name fsq_soft_pipeline_v1_tune_trial_005 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-0.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric combo --enable_pairwise_loss 1 --lr 0.00037931430667181116 --lambda_pair 0.08482792132871747 --pair_max_future 6 --lambda_transition 0.17817905827469455 --transition_logit_scale 0.19002197644085927 --beam_size 3 --beam_len_penalty 0.31437874025233586 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 4.0 --dropout 0.17589047825814272 --temperature 0.10795576553490692 --seq_num_layers 2 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.008701794605589858 --soft_constraint_dist_emb_dim 16 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs/04-04-14:54 fsq_soft_pipeline_v1_tune_trial_005(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/fsq_soft_pipeline_v1_tune_trial_005",
+      "trial_name": "fsq_soft_pipeline_v1_tune_trial_005"
+    }
+  },
+  {
+    "number": 6,
+    "state": "TrialState.COMPLETE",
+    "value": 0.0553,
+    "params": {
+      "soft_constraint_scale": 0.053202092967354904,
+      "lr": 0.00032921633883726745,
+      "lambda_pair": 0.175311995165607,
+      "pair_max_future": 4,
+      "lambda_transition": 0.10878347307062702,
+      "transition_logit_scale": 0.29698964187996846,
+      "beam_size": 3,
+      "beam_len_penalty": 0.5537413909426128,
+      "combo_beta": 4.0,
+      "dropout": 0.17642229722171804,
+      "temperature": 0.09127901035450839,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 16
+    },
+    "user_attrs": {
+      "best_val_epoch": 4,
+      "best_val_item": {
+        "epoch": 4,
+        "f1": 0.0437,
+        "pairs_f1": 0.0029,
+        "full_f1": 0.5418,
+        "full_pairs_f1": 0.2443
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Foursquare --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/data_split_new.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Foursquare/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name fsq_soft_pipeline_v1_tune_trial_006 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-0.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric combo --enable_pairwise_loss 1 --lr 0.00032921633883726745 --lambda_pair 0.175311995165607 --pair_max_future 4 --lambda_transition 0.10878347307062702 --transition_logit_scale 0.29698964187996846 --beam_size 3 --beam_len_penalty 0.5537413909426128 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 4.0 --dropout 0.17642229722171804 --temperature 0.09127901035450839 --seq_num_layers 2 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.053202092967354904 --soft_constraint_dist_emb_dim 16 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs/04-04-15:02 fsq_soft_pipeline_v1_tune_trial_006(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/fsq_soft_pipeline_v1_tune_trial_006",
+      "trial_name": "fsq_soft_pipeline_v1_tune_trial_006"
+    }
+  },
+  {
+    "number": 7,
+    "state": "TrialState.COMPLETE",
+    "value": 0.0453,
+    "params": {
+      "soft_constraint_scale": 0.033928212281948235,
+      "lr": 0.0003124406969893676,
+      "lambda_pair": 0.08279513922639621,
+      "pair_max_future": 4,
+      "lambda_transition": 0.16803889869062344,
+      "transition_logit_scale": 0.29178911701525956,
+      "beam_size": 3,
+      "beam_len_penalty": 0.3468259189114289,
+      "combo_beta": 4.0,
+      "dropout": 0.15268890008121813,
+      "temperature": 0.10704043765788926,
+      "seq_num_layers": 3,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 16
+    },
+    "user_attrs": {
+      "best_val_epoch": 3,
+      "best_val_item": {
+        "epoch": 3,
+        "f1": 0.0369,
+        "pairs_f1": 0.0021,
+        "full_f1": 0.5389,
+        "full_pairs_f1": 0.2416
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Foursquare --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/data_split_new.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Foursquare/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name fsq_soft_pipeline_v1_tune_trial_007 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-0.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric combo --enable_pairwise_loss 1 --lr 0.0003124406969893676 --lambda_pair 0.08279513922639621 --pair_max_future 4 --lambda_transition 0.16803889869062344 --transition_logit_scale 0.29178911701525956 --beam_size 3 --beam_len_penalty 0.3468259189114289 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 4.0 --dropout 0.15268890008121813 --temperature 0.10704043765788926 --seq_num_layers 3 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.033928212281948235 --soft_constraint_dist_emb_dim 16 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs/04-04-15:11 fsq_soft_pipeline_v1_tune_trial_007(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/fsq_soft_pipeline_v1_tune_trial_007",
+      "trial_name": "fsq_soft_pipeline_v1_tune_trial_007"
+    }
+  },
+  {
+    "number": 8,
+    "state": "TrialState.COMPLETE",
+    "value": 0.0564,
+    "params": {
+      "soft_constraint_scale": 0.0777808761010546,
+      "lr": 0.0005724743114588529,
+      "lambda_pair": 0.1821194037325489,
+      "pair_max_future": 6,
+      "lambda_transition": 0.1621938067411084,
+      "transition_logit_scale": 0.18602836354270819,
+      "beam_size": 3,
+      "beam_len_penalty": 0.27668251634633556,
+      "combo_beta": 4.0,
+      "dropout": 0.12998822044248343,
+      "temperature": 0.07598016654674647,
+      "seq_num_layers": 3,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 1,
+      "best_val_item": {
+        "epoch": 1,
+        "f1": 0.0464,
+        "pairs_f1": 0.0025,
+        "full_f1": 0.5436,
+        "full_pairs_f1": 0.2466
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Foursquare --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/data_split_new.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Foursquare/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name fsq_soft_pipeline_v1_tune_trial_008 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-0.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric combo --enable_pairwise_loss 1 --lr 0.0005724743114588529 --lambda_pair 0.1821194037325489 --pair_max_future 6 --lambda_transition 0.1621938067411084 --transition_logit_scale 0.18602836354270819 --beam_size 3 --beam_len_penalty 0.27668251634633556 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 4.0 --dropout 0.12998822044248343 --temperature 0.07598016654674647 --seq_num_layers 3 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.0777808761010546 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs/04-04-15:19 fsq_soft_pipeline_v1_tune_trial_008(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/fsq_soft_pipeline_v1_tune_trial_008",
+      "trial_name": "fsq_soft_pipeline_v1_tune_trial_008"
+    }
+  },
+  {
+    "number": 9,
+    "state": "TrialState.COMPLETE",
+    "value": 0.0526,
+    "params": {
+      "soft_constraint_scale": 0.014985250132146355,
+      "lr": 0.0003081682704392784,
+      "lambda_pair": 0.12068559356248498,
+      "pair_max_future": 6,
+      "lambda_transition": 0.06298101533096065,
+      "transition_logit_scale": 0.2801071854666563,
+      "beam_size": 3,
+      "beam_len_penalty": 0.36969238730548154,
+      "combo_beta": 4.0,
+      "dropout": 0.15250987385835696,
+      "temperature": 0.07918786728615124,
+      "seq_num_layers": 2,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 9,
+      "best_val_item": {
+        "epoch": 9,
+        "f1": 0.0378,
+        "pairs_f1": 0.0037,
+        "full_f1": 0.5388,
+        "full_pairs_f1": 0.2401
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Foursquare --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/data_split_new.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Foursquare/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name fsq_soft_pipeline_v1_tune_trial_009 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-0.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric combo --enable_pairwise_loss 1 --lr 0.0003081682704392784 --lambda_pair 0.12068559356248498 --pair_max_future 6 --lambda_transition 0.06298101533096065 --transition_logit_scale 0.2801071854666563 --beam_size 3 --beam_len_penalty 0.36969238730548154 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 4.0 --dropout 0.15250987385835696 --temperature 0.07918786728615124 --seq_num_layers 2 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.014985250132146355 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs/04-04-15:26 fsq_soft_pipeline_v1_tune_trial_009(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/fsq_soft_pipeline_v1_tune_trial_009",
+      "trial_name": "fsq_soft_pipeline_v1_tune_trial_009"
+    }
+  },
+  {
+    "number": 10,
+    "state": "TrialState.COMPLETE",
+    "value": 0.0554,
+    "params": {
+      "soft_constraint_scale": 0.07981732643367025,
+      "lr": 0.00039794889271878715,
+      "lambda_pair": 0.14885497601177772,
+      "pair_max_future": 4,
+      "lambda_transition": 0.12063786244550448,
+      "transition_logit_scale": 0.10202186361736167,
+      "beam_size": 3,
+      "beam_len_penalty": 0.47770766670338805,
+      "combo_beta": 4.0,
+      "dropout": 0.08191848034128604,
+      "temperature": 0.06347804470803381,
+      "seq_num_layers": 3,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 2,
+      "best_val_item": {
+        "epoch": 2,
+        "f1": 0.0414,
+        "pairs_f1": 0.0035,
+        "full_f1": 0.5417,
+        "full_pairs_f1": 0.2453
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Foursquare --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/data_split_new.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Foursquare/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name fsq_soft_pipeline_v1_tune_trial_010 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-0.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric combo --enable_pairwise_loss 1 --lr 0.00039794889271878715 --lambda_pair 0.14885497601177772 --pair_max_future 4 --lambda_transition 0.12063786244550448 --transition_logit_scale 0.10202186361736167 --beam_size 3 --beam_len_penalty 0.47770766670338805 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 4.0 --dropout 0.08191848034128604 --temperature 0.06347804470803381 --seq_num_layers 3 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.07981732643367025 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs/04-04-15:38 fsq_soft_pipeline_v1_tune_trial_010(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/fsq_soft_pipeline_v1_tune_trial_010",
+      "trial_name": "fsq_soft_pipeline_v1_tune_trial_010"
+    }
+  },
+  {
+    "number": 11,
+    "state": "TrialState.COMPLETE",
+    "value": 0.0576,
+    "params": {
+      "soft_constraint_scale": 0.06183977428251956,
+      "lr": 0.00045460077097957466,
+      "lambda_pair": 0.033220959018173096,
+      "pair_max_future": 4,
+      "lambda_transition": 0.08972199733936881,
+      "transition_logit_scale": 0.10830940513365436,
+      "beam_size": 3,
+      "beam_len_penalty": 0.4507984696955475,
+      "combo_beta": 4.0,
+      "dropout": 0.1007107522161163,
+      "temperature": 0.11907208939676565,
+      "seq_num_layers": 3,
+      "mamba_d_state": 32,
+      "mamba_expand": 2,
+      "soft_constraint_dist_emb_dim": 32
+    },
+    "user_attrs": {
+      "best_val_epoch": 2,
+      "best_val_item": {
+        "epoch": 2,
+        "f1": 0.0456,
+        "pairs_f1": 0.003,
+        "full_f1": 0.5442,
+        "full_pairs_f1": 0.248
+      },
+      "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Foursquare --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/data_split_new.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Foursquare/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name fsq_soft_pipeline_v1_tune_trial_011 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-0.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric combo --enable_pairwise_loss 1 --lr 0.00045460077097957466 --lambda_pair 0.033220959018173096 --pair_max_future 4 --lambda_transition 0.08972199733936881 --transition_logit_scale 0.10830940513365436 --beam_size 3 --beam_len_penalty 0.4507984696955475 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 4.0 --dropout 0.1007107522161163 --temperature 0.11907208939676565 --seq_num_layers 3 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.06183977428251956 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict",
+      "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs/04-04-15:46 fsq_soft_pipeline_v1_tune_trial_011(2050).log",
+      "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/fsq_soft_pipeline_v1_tune_trial_011",
+      "trial_name": "fsq_soft_pipeline_v1_tune_trial_011"
+    }
+  }
+]

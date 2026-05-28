@@ -1,0 +1,36 @@
+{
+  "trial_number": 6,
+  "trial_name": "yelp_soft_pipeline_v1_tune_trial_006",
+  "objective_metric": "full_combo",
+  "objective_value": 1.336097884874153,
+  "best_val_epoch": 3,
+  "best_val_item": {
+    "epoch": 3,
+    "f1": 0.016,
+    "pairs_f1": 0.0001,
+    "full_f1": 0.599,
+    "full_pairs_f1": 0.2879
+  },
+  "params": {
+    "lr": 0.0005474757436111134,
+    "lambda_pair": 0.16659825439743392,
+    "pair_max_future": 6,
+    "lambda_transition": 0.08260948751514435,
+    "transition_logit_scale": 0.2907728698865922,
+    "beam_size": 3,
+    "beam_len_penalty": 0.46331447067470943,
+    "combo_beta": 2.5602566338108823,
+    "dropout": 0.08703438600353917,
+    "temperature": 0.07863357855049277,
+    "seq_num_layers": 2,
+    "mamba_d_state": 32,
+    "mamba_expand": 2,
+    "soft_constraint_scale": 0.07903668540158991,
+    "soft_constraint_dist_emb_dim": 32
+  },
+  "return_code": 0,
+  "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_soft_pipeline_v1/tuning/logs/04-04-00:15 yelp_soft_pipeline_v1_tune_trial_006(2050).log",
+  "model_dir": "/root/autodl-tmp/MyCrossCity/Yelp/model_save_new/yelp_soft_pipeline_v1_tune_trial_006",
+  "timestamp": "2026-04-04T00:24:54",
+  "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Yelp --ori_data ../../Yelp/home.txt --dst_data ../../Yelp/oot.txt --trans_data ../../Yelp/travel.txt --ori_data_enriched ../../Yelp/extendData/enriched_home.txt --dst_data_enriched ../../Yelp/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/yelp_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/Yelp/spottrip_baseline_split.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Yelp/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name yelp_soft_pipeline_v1_tune_trial_006 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-1.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric full_combo --enable_pairwise_loss 1 --lr 0.0005474757436111134 --lambda_pair 0.16659825439743392 --pair_max_future 6 --lambda_transition 0.08260948751514435 --transition_logit_scale 0.2907728698865922 --beam_size 3 --beam_len_penalty 0.46331447067470943 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 2.5602566338108823 --dropout 0.08703438600353917 --temperature 0.07863357855049277 --seq_num_layers 2 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.07903668540158991 --soft_constraint_dist_emb_dim 32 --use_enriched_data --qwen_strict --mamba_strict"
+}

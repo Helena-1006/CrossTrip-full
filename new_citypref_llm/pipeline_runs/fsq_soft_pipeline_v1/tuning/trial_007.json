@@ -1,0 +1,36 @@
+{
+  "trial_number": 7,
+  "trial_name": "fsq_soft_pipeline_v1_tune_trial_007",
+  "objective_metric": "combo",
+  "objective_value": 0.0453,
+  "best_val_epoch": 3,
+  "best_val_item": {
+    "epoch": 3,
+    "f1": 0.0369,
+    "pairs_f1": 0.0021,
+    "full_f1": 0.5389,
+    "full_pairs_f1": 0.2416
+  },
+  "params": {
+    "lr": 0.0003124406969893676,
+    "lambda_pair": 0.08279513922639621,
+    "pair_max_future": 4,
+    "lambda_transition": 0.16803889869062344,
+    "transition_logit_scale": 0.29178911701525956,
+    "beam_size": 3,
+    "beam_len_penalty": 0.3468259189114289,
+    "combo_beta": 4.0,
+    "dropout": 0.15268890008121813,
+    "temperature": 0.10704043765788926,
+    "seq_num_layers": 3,
+    "mamba_d_state": 32,
+    "mamba_expand": 2,
+    "soft_constraint_scale": 0.033928212281948235,
+    "soft_constraint_dist_emb_dim": 16
+  },
+  "return_code": 0,
+  "log_file": "/root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs/04-04-15:11 fsq_soft_pipeline_v1_tune_trial_007(2050).log",
+  "model_dir": "/root/autodl-tmp/MyCrossCity/Foursquare/model_save_new/fsq_soft_pipeline_v1_tune_trial_007",
+  "timestamp": "2026-04-04T15:19:35",
+  "command": "/root/miniconda3/envs/SPOT-Trip/bin/python ./main.py --mode train --dataset_name Foursquare --ori_data ../../Foursquare/home.txt --dst_data ../../Foursquare/oot.txt --trans_data ../../Foursquare/travel.txt --ori_data_enriched ../../Foursquare/extendData/enriched_home.txt --dst_data_enriched ../../Foursquare/extendData/enriched_oot.txt --log --save_trainable_only 1 --save_optimizer_state 0 --best_save --log_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/pipeline_runs/fsq_soft_pipeline_v1/tuning/logs --seed 2050 --data_split_path /root/autodl-tmp/MyCrossCity/code/new_citypref_llm/data_split_new.pkl --split_strategy legacy --split_singleton_to_train 1 --save_path ../../Foursquare/model_save_new --device cuda:0 --epoch 30 --stop_epoch 8 --name fsq_soft_pipeline_v1_tune_trial_007 --semantic_backend qwen --qwen_train_soft_prompt 0 --llm_model_name Qwen/Qwen2.5-1.5B-Instruct --llm_fallback_names Qwen/Qwen2.5-0.5B-Instruct --llm_dtype bfloat16 --use_mamba_backbone 1 --mamba_d_conv 4 --save_dual_best 1 --use_f1_floor_filter 1 --f1_floor_margin 0.002 --early_stop_metric combo --enable_pairwise_loss 1 --lr 0.0003124406969893676 --lambda_pair 0.08279513922639621 --pair_max_future 4 --lambda_transition 0.16803889869062344 --transition_logit_scale 0.29178911701525956 --beam_size 3 --beam_len_penalty 0.3468259189114289 --use_beam_search 1 --use_no_repeat_mask 1 --combo_beta 4.0 --dropout 0.15268890008121813 --temperature 0.10704043765788926 --seq_num_layers 3 --mamba_d_state 32 --mamba_expand 2 --decode_constraint_mode soft --enforce_start_end_constraints 1 --soft_constraint_scale 0.033928212281948235 --soft_constraint_dist_emb_dim 16 --use_enriched_data --qwen_strict --mamba_strict"
+}
